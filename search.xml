@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>第一篇文章</title>
-      <link href="/2023/03/11/2023-3-11-%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-      <url>/2023/03/11/2023-3-11-%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-      
-        <content type="html"><![CDATA[<h2 id="这是我的第一篇文章"><a href="#这是我的第一篇文章" class="headerlink" title="这是我的第一篇文章"></a>这是我的第一篇文章</h2><div class="note simple"><p>内容</p></div><div class="timeline blue"><div class="timeline-item headline"><div class="timeline-item-title"><div class="item-circle"><p>时间轴样式</p></div></div></div><div class="timeline-item"><div class="timeline-item-title"><div class="item-circle"><p>2020-07-24 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases">2.6.6 -&gt; 3.0</a></p></div></div><div class="timeline-item-content"><ol><li>如果有 <code>hexo-lazyload-image</code> 插件，需要删除并重新安装最新版本，设置 <code>lazyload.isSPA: true</code>。</li><li>2.x 版本的 css 和 js 不适用于 3.x 版本，如果使用了 <code>use_cdn: true</code> 则需要删除。</li><li>2.x 版本的 fancybox 标签在 3.x 版本中被重命名为 gallery 。</li><li>2.x 版本的置顶 <code>top: true</code> 改为了 <code>pin: true</code>，并且同样适用于 <code>layout: page</code> 的页面。</li><li>如果使用了 <code>hexo-offline</code> 插件，建议卸载，3.0 版本默认开启了 pjax 服务。</li></ol></div></div><div class="timeline-item"><div class="timeline-item-title"><div class="item-circle"><p>2020-05-15 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.6">2.6.3 -&gt; 2.6.6</a></p></div></div><div class="timeline-item-content"><p>不需要额外处理。</p></div></div></div><h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p> <img src="https://cdn.jsdelivr.net/gh/bb12138ss/img@main//test/3.gif" alt="多啦a梦"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 标签1 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>指针</title>
       <link href="/2023/03/11/2023-3-10-%E6%8C%87%E9%92%88/"/>
       <url>/2023/03/11/2023-3-10-%E6%8C%87%E9%92%88/</url>
@@ -79,23 +54,23 @@
     
     
     <entry>
-      <title>第六篇文章</title>
-      <link href="/2023/03/11/2023-3-11-%E7%AC%AC%E5%85%AD%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-      <url>/2023/03/11/2023-3-11-%E7%AC%AC%E5%85%AD%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+      <title>第二篇文章</title>
+      <link href="/2023/03/11/2023-3-11-%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+      <url>/2023/03/11/2023-3-11-%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</url>
       
-        <content type="html"><![CDATA[<h2 id="这是我的第六篇文章"><a href="#这是我的第六篇文章" class="headerlink" title="这是我的第六篇文章"></a>这是我的第六篇文章</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="这是我的第二篇文章"><a href="#这是我的第二篇文章" class="headerlink" title="这是我的第二篇文章"></a>这是我的第二篇文章</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">VSCode终端</span></span><br><span class="line">hexo clean; hexo s</span><br><span class="line">hexo clean; hexo g; hexo d</span><br><span class="line">git add .; git commit -m &quot;npm publish&quot;; npm version patch; </span><br><span class="line">git push</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Cmder终端</span></span><br><span class="line">hexo clean &amp;&amp; hexo s</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br><span class="line">git add . &amp;&amp; git commit -m &quot;npm publish&quot; &amp;&amp; npm version patch</span><br><span class="line">git push</span><br></pre></td></tr></table></figure><p><code>java</code></p><h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><h4 id="H4"><a href="#H4" class="headerlink" title="H4"></a>H4</h4><h5 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h5><h6 id="H6"><a href="#H6" class="headerlink" title="H6"></a>H6</h6>]]></content>
       
       
       <categories>
           
-          <category> c++ </category>
+          <category> hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 标签6 </tag>
+            <tag> 标签2 </tag>
             
         </tags>
       
@@ -104,48 +79,23 @@
     
     
     <entry>
-      <title>第七篇文章</title>
-      <link href="/2023/03/11/2023-3-12-%E7%AC%AC%E4%B8%83%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-      <url>/2023/03/11/2023-3-12-%E7%AC%AC%E4%B8%83%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+      <title>第一篇文章</title>
+      <link href="/2023/03/11/2023-3-11-%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+      <url>/2023/03/11/2023-3-11-%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
       
-        <content type="html"><![CDATA[<h2 id="这是我的第七篇文章"><a href="#这是我的第七篇文章" class="headerlink" title="这是我的第七篇文章"></a>这是我的第七篇文章</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="这是我的第一篇文章"><a href="#这是我的第一篇文章" class="headerlink" title="这是我的第一篇文章"></a>这是我的第一篇文章</h2><div class="note simple"><p>内容</p></div><div class="timeline blue"><div class="timeline-item headline"><div class="timeline-item-title"><div class="item-circle"><p>时间轴样式</p></div></div></div><div class="timeline-item"><div class="timeline-item-title"><div class="item-circle"><p>2020-07-24 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases">2.6.6 -&gt; 3.0</a></p></div></div><div class="timeline-item-content"><ol><li>如果有 <code>hexo-lazyload-image</code> 插件，需要删除并重新安装最新版本，设置 <code>lazyload.isSPA: true</code>。</li><li>2.x 版本的 css 和 js 不适用于 3.x 版本，如果使用了 <code>use_cdn: true</code> 则需要删除。</li><li>2.x 版本的 fancybox 标签在 3.x 版本中被重命名为 gallery 。</li><li>2.x 版本的置顶 <code>top: true</code> 改为了 <code>pin: true</code>，并且同样适用于 <code>layout: page</code> 的页面。</li><li>如果使用了 <code>hexo-offline</code> 插件，建议卸载，3.0 版本默认开启了 pjax 服务。</li></ol></div></div><div class="timeline-item"><div class="timeline-item-title"><div class="item-circle"><p>2020-05-15 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.6">2.6.3 -&gt; 2.6.6</a></p></div></div><div class="timeline-item-content"><p>不需要额外处理。</p></div></div></div><h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p> <img src="https://cdn.jsdelivr.net/gh/bb12138ss/img@main//test/3.gif" alt="多啦a梦"></p>]]></content>
       
       
       <categories>
           
-          <category> python </category>
+          <category> hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 标签7 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>第八篇文章</title>
-      <link href="/2023/03/11/2023-3-12-%E7%AC%AC%E5%85%AB%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-      <url>/2023/03/11/2023-3-12-%E7%AC%AC%E5%85%AB%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-      
-        <content type="html"><![CDATA[<h2 id="这是我的第八篇文章"><a href="#这是我的第八篇文章" class="headerlink" title="这是我的第八篇文章"></a>这是我的第八篇文章</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> python </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 标签8 </tag>
+            <tag> 标签1 </tag>
             
         </tags>
       
@@ -179,23 +129,73 @@
     
     
     <entry>
-      <title>第二篇文章</title>
-      <link href="/2023/03/11/2023-3-11-%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-      <url>/2023/03/11/2023-3-11-%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+      <title>第七篇文章</title>
+      <link href="/2023/03/11/2023-3-12-%E7%AC%AC%E4%B8%83%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+      <url>/2023/03/11/2023-3-12-%E7%AC%AC%E4%B8%83%E7%AF%87%E6%96%87%E7%AB%A0/</url>
       
-        <content type="html"><![CDATA[<h2 id="这是我的第二篇文章"><a href="#这是我的第二篇文章" class="headerlink" title="这是我的第二篇文章"></a>这是我的第二篇文章</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">VSCode终端</span></span><br><span class="line">hexo clean; hexo s</span><br><span class="line">hexo clean; hexo g; hexo d</span><br><span class="line">git add .; git commit -m &quot;npm publish&quot;; npm version patch; </span><br><span class="line">git push</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Cmder终端</span></span><br><span class="line">hexo clean &amp;&amp; hexo s</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br><span class="line">git add . &amp;&amp; git commit -m &quot;npm publish&quot; &amp;&amp; npm version patch</span><br><span class="line">git push</span><br></pre></td></tr></table></figure><p><code>java</code></p><h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><h4 id="H4"><a href="#H4" class="headerlink" title="H4"></a>H4</h4><h5 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h5><h6 id="H6"><a href="#H6" class="headerlink" title="H6"></a>H6</h6>]]></content>
+        <content type="html"><![CDATA[<h2 id="这是我的第七篇文章"><a href="#这是我的第七篇文章" class="headerlink" title="这是我的第七篇文章"></a>这是我的第七篇文章</h2>]]></content>
       
       
       <categories>
           
-          <category> hexo </category>
+          <category> python </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 标签2 </tag>
+            <tag> 标签7 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第六篇文章</title>
+      <link href="/2023/03/11/2023-3-11-%E7%AC%AC%E5%85%AD%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+      <url>/2023/03/11/2023-3-11-%E7%AC%AC%E5%85%AD%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="这是我的第六篇文章"><a href="#这是我的第六篇文章" class="headerlink" title="这是我的第六篇文章"></a>这是我的第六篇文章</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> c++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签6 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第八篇文章</title>
+      <link href="/2023/03/11/2023-3-12-%E7%AC%AC%E5%85%AB%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+      <url>/2023/03/11/2023-3-12-%E7%AC%AC%E5%85%AB%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="这是我的第八篇文章"><a href="#这是我的第八篇文章" class="headerlink" title="这是我的第八篇文章"></a>这是我的第八篇文章</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签8 </tag>
             
         </tags>
       
