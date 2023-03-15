@@ -453,3 +453,38 @@ div#archive {
     -ms-transform: scale(0.5);
     -o-transform: scale(0.5);
 }
+
+
+/* 欢迎信息 */
+
+#welcome-info {
+    background: linear-gradient(45deg, #b9f4f3, #e3fbf9);
+    border-radius: 18px;
+    padding: 8px;
+}
+
+[data-theme="dark"] #welcome-info {
+    background: #212121;
+}
+
+
+/*哔哩哔哩视频适配*/
+
+.aspect-ratio {
+    position: relative;
+    width: 90%;
+    height: auto;
+    padding-bottom: 75%;
+    margin: 3% auto;
+    text-align: center;
+}
+
+.aspect-ratio iframe {
+    position: absolute;
+    width: 100%;
+    height: 86%;
+    left: 0;
+    top: 0;
+}
+
+@import "//at.alicdn.com/t/c/font_3954813_5uchrn080ty.css";

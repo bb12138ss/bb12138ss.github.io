@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>事件</title>
+      <link href="/2023/03/15/JavaScript%E4%BA%8B%E4%BB%B6/"/>
+      <url>/2023/03/15/JavaScript%E4%BA%8B%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<h1 id="JavaScript-事件"><a href="#JavaScript-事件" class="headerlink" title="JavaScript 事件"></a>JavaScript 事件</h1><p><strong>HTML 事件</strong><br><strong>HTML 事件可以是浏览器或用户做的某些事情。</strong></p><p>下面是 HTML 事件的一些例子：</p><p>HTML 网页完成加载<br>HTML 输入字段被修改<br>HTML 按钮被点击<br>通常，当事件发生时，用户会希望做某件事。</p><p>JavaScript 允许您在事件被侦测到时执行代码。</p><p>通过 JavaScript 代码，HTML 允许您向 HTML 元素添加事件处理程序。</p><h2 id="常见的-HTML-事件"><a href="#常见的-HTML-事件" class="headerlink" title="常见的 HTML 事件"></a>常见的 HTML 事件</h2><p>下面是一些常见的 HTML 事件：<br>事件 | 描述<br>-|-|-<br>onchange|HTML 元素已被改变<br>onclick|用户点击了 HTML 元素<br>onmouseover|用户把鼠标移动到 HTML 元素上<br>onmouseout|用户把鼠标移开 HTML 元素<br>onkeydown|用户按下键盘按键<br>onload|浏览器已经完成页面加载</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript</title>
       <link href="/2023/03/15/JavaScript/"/>
       <url>/2023/03/15/JavaScript/</url>
@@ -83,7 +108,7 @@
       <link href="/2023/03/11/%E6%B5%8B%E8%AF%95/"/>
       <url>/2023/03/11/%E6%B5%8B%E8%AF%95/</url>
       
-        <content type="html"><![CDATA[<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><div class="note simple"><p>内容</p></div><div class="timeline blue"><div class="timeline-item headline"><div class="timeline-item-title"><div class="item-circle"><p>时间轴样式</p></div></div></div><div class="timeline-item"><div class="timeline-item-title"><div class="item-circle"><p>2020-07-24 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases">2.6.6 -&gt; 3.0</a></p></div></div><div class="timeline-item-content"><ol><li>如果有 <code>hexo-lazyload-image</code> 插件，需要删除并重新安装最新版本，设置 <code>lazyload.isSPA: true</code>。</li><li>2.x 版本的 css 和 js 不适用于 3.x 版本，如果使用了 <code>use_cdn: true</code> 则需要删除。</li><li>2.x 版本的 fancybox 标签在 3.x 版本中被重命名为 gallery 。</li><li>2.x 版本的置顶 <code>top: true</code> 改为了 <code>pin: true</code>，并且同样适用于 <code>layout: page</code> 的页面。</li><li>如果使用了 <code>hexo-offline</code> 插件，建议卸载，3.0 版本默认开启了 pjax 服务。</li></ol></div></div><div class="timeline-item"><div class="timeline-item-title"><div class="item-circle"><p>2020-05-15 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.6">2.6.3 -&gt; 2.6.6</a></p></div></div><div class="timeline-item-content"><p>不需要额外处理。</p></div></div></div><h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p> <img src="https://cdn.jsdelivr.net/gh/bb12138ss/img@main//test/3.gif" alt="多啦a梦"></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p><div align="center" class="aspect-ratio">    <iframe src="https://player.bilibili.com/player.html?aid=474023258&&page=1&as_wide=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" high_quality="1" danmaku="1" allowfullscreen="true">     </iframe></div><br><div class="note simple"><p>内容</p></div></p><div class="timeline blue"><div class="timeline-item headline"><div class="timeline-item-title"><div class="item-circle"><p>时间轴样式</p></div></div></div><div class="timeline-item"><div class="timeline-item-title"><div class="item-circle"><p>2020-07-24 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases">2.6.6 -&gt; 3.0</a></p></div></div><div class="timeline-item-content"><ol><li>如果有 <code>hexo-lazyload-image</code> 插件，需要删除并重新安装最新版本，设置 <code>lazyload.isSPA: true</code>。</li><li>2.x 版本的 css 和 js 不适用于 3.x 版本，如果使用了 <code>use_cdn: true</code> 则需要删除。</li><li>2.x 版本的 fancybox 标签在 3.x 版本中被重命名为 gallery 。</li><li>2.x 版本的置顶 <code>top: true</code> 改为了 <code>pin: true</code>，并且同样适用于 <code>layout: page</code> 的页面。</li><li>如果使用了 <code>hexo-offline</code> 插件，建议卸载，3.0 版本默认开启了 pjax 服务。</li></ol></div></div><div class="timeline-item"><div class="timeline-item-title"><div class="item-circle"><p>2020-05-15 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.6">2.6.3 -&gt; 2.6.6</a></p></div></div><div class="timeline-item-content"><p>不需要额外处理。</p></div></div></div><h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p> <img src="https://cdn.jsdelivr.net/gh/bb12138ss/img@main//test/3.gif" alt="多啦a梦"></p>]]></content>
       
       
       <categories>
