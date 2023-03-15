@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>JavaScript</title>
+      <link href="/2023/03/15/JavaScript/"/>
+      <url>/2023/03/15/JavaScript/</url>
+      
+        <content type="html"><![CDATA[<h1 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h1><figure class="highlight plaintext"><figcaption><span>document</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> 地址: https://www.w3school.com.cn/js/index.asp</span><br><span class="line"> 离线文档: W3School 离线手册(2017.03.11 版).chm</span><br><span class="line"> 基本说明</span><br><span class="line">JavaScript 能改变 HTML 内容，能改变 HTML 属性，能改变 HTML 样式 (CSS)，能完成</span><br><span class="line">页面的数据验证。</span><br></pre></td></tr></table></figure><h2 id="两种js的引入方式"><a href="#两种js的引入方式" class="headerlink" title="两种js的引入方式"></a>两种js的引入方式</h2><h3 id="方式1"><a href="#方式1" class="headerlink" title="方式1:"></a>方式1:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">&lt;title&gt;script 标签中 写 JS 代码&lt;/title&gt;</span><br><span class="line">1. 可以在 head 和 body 嵌入 script</span><br><span class="line">2. 执行顺序 从上到下</span><br><span class="line">3. 建议放在 head</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">//在 head 内使用 script 写 js</span><br><span class="line">console.log(&quot;ok&quot;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">//在 body 内使用 script 写 js</span><br><span class="line">console.log(&quot;hi&quot;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><h3 id="方式2"><a href="#方式2" class="headerlink" title="方式2:"></a>方式2:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">&lt;title&gt;使用 script 标签引入 JS 文件&lt;/title&gt;</span><br><span class="line">&lt;!-- &lt;script type=&quot;text/javascript&quot; src=&quot;引入的 js 文件&quot;&gt;&lt;/script&gt;</span><br><span class="line">--&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;test.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>指针</title>
       <link href="/2023/03/11/2023-3-10-%E6%8C%87%E9%92%88/"/>
       <url>/2023/03/11/2023-3-10-%E6%8C%87%E9%92%88/</url>
