@@ -4,9 +4,59 @@
   
     
     <entry>
-      <title>事件</title>
-      <link href="/2023/03/15/JavaScript%E4%BA%8B%E4%BB%B6/"/>
-      <url>/2023/03/15/JavaScript%E4%BA%8B%E4%BB%B6/</url>
+      <title>JS函数注意事项</title>
+      <link href="/2023/03/16/JS%E5%87%BD%E6%95%B0%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
+      <url>/2023/03/16/JS%E5%87%BD%E6%95%B0%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
+      
+        <content type="html"><![CDATA[<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ol><li>JS 中函数的重载会覆盖掉上一次的定义<br>(1) JS 中函数的重载会覆盖掉上一次的定义<br>(2) 当你调用 f1() 时候其实调用的是 f1(name)<br>(3) 调用 f1(name) 如果你没有传入实参, 那么这个 name 就是 undefined<br>function f1() {<br>alert(“ok jack~”)<br>}<br>function f1(name) {<br>alert(“hi “ + name); }<br>f1();</li></ol><hr><ol><li>函数的 arguments 隐形参数（作用域在 function 函数内）<br>(1) 隐形参数: 在 function 函数中不需要定义，可以直接用来获取所有参<br>数的变量。<br>(2) 隐形参数特别像 java 的可变参数一样。 public void fun( int … args )<br>(3) js 中的隐形参数跟 java 的可变参数一样。操作类似数组<br>(4) 我们用console.log 输出对象的数据，使用, 连接而不是+</li></ol><hr><ol><li>(1)如果我们的函数有形参，在传入实参的时候，仍然按照顺序匹配<br>(2)如果有匹配上，就赋给他， 如果没有匹配上，也无所谓<br>(3)仍然会把所有的实参，赋给 arguments<br>(4)如果形参个数，大于了实参个数，则该形参的值为 undefined</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JS数组</title>
+      <link href="/2023/03/16/JS%E6%95%B0%E7%BB%84/"/>
+      <url>/2023/03/16/JS%E6%95%B0%E7%BB%84/</url>
+      
+        <content type="html"><![CDATA[<h1 id="数组定义"><a href="#数组定义" class="headerlink" title="数组定义"></a>数组定义</h1><h2 id="数组的四种定义方式"><a href="#数组的四种定义方式" class="headerlink" title="数组的四种定义方式"></a>数组的四种定义方式</h2><p>``` 数组定义方式1<br>var fruit1 = [“苹果”,”草莓”,”香蕉”];<br>console.log(“fruit1=” + fruit1);<br>console.log(fruit1[1]); //表示访问fruit1数组的第2个元素，1表达下标/索引，从0开始编号</p><p> 数组定义方式2<br>var fruit2 = [];//空数组<br>//添加元素<br>fruit2[0] = “橘子”;<br>fruit2[2] = “菠萝”;<br>console.log(“fruit2[1]=” + fruit2[1]);//如果该元素伟定义，返回的就是undefined<br>console.log(“fruit2[10]=” + fruit2[10]);// 如 果 该 元 素 不 存 在 ， 返 回 的 就 是<br>undefined</p><p> 数组定义方式3<br>var fruit3 = new Array(“蓝莓”,”猕猴桃”,”榴莲”);</p><p> 数组定义方式4<br>var fruit4 = new Array();//空数组<br>console.log(typeof fruit4);<br>fruit4[0] = “苹果”;<br>fruit4[1] = “苹果”;<br>fruit4[2] = “yy”;//相当于是给数组扩容<br>fruit4[0] = “zz”;//替换<br>fruit4[8] = “红旗”;//扩容, 如果是跳过了下标给赋值，那么中间没有赋值的元素<br>为 undefined<br>console.log(“fruit4[3]=” + fruit4[3]);//undefined<br>console.log(“fruit4=” + fruit4);</p><h2 id="数组使用和遍历"><a href="#数组使用和遍历" class="headerlink" title="数组使用和遍历"></a>数组使用和遍历</h2><p>遍历<br>console.log(“数组的长度= “ + cars.length)//6<br>for (i = 0; i &lt; cars.length; i++) {<br>console.log(cars[i]); //log 方法会自动换行<br>}</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JS事件</title>
+      <link href="/2023/03/15/JS%E4%BA%8B%E4%BB%B6/"/>
+      <url>/2023/03/15/JS%E4%BA%8B%E4%BB%B6/</url>
       
         <content type="html"><![CDATA[<h1 id="JavaScript-事件"><a href="#JavaScript-事件" class="headerlink" title="JavaScript 事件"></a>JavaScript 事件</h1><p><strong>HTML 事件</strong><br><strong>HTML 事件可以是浏览器或用户做的某些事情。</strong></p><p>下面是 HTML 事件的一些例子：</p><p>HTML 网页完成加载<br>HTML 输入字段被修改<br>HTML 按钮被点击<br>通常，当事件发生时，用户会希望做某件事。</p><p>JavaScript 允许您在事件被侦测到时执行代码。</p><p>通过 JavaScript 代码，HTML 允许您向 HTML 元素添加事件处理程序。</p><h2 id="常见的-HTML-事件"><a href="#常见的-HTML-事件" class="headerlink" title="常见的 HTML 事件"></a>常见的 HTML 事件</h2><p>下面是一些常见的 HTML 事件：<br>事件 | 描述<br>-|-|-<br>onchange|HTML 元素已被改变<br>onclick|用户点击了 HTML 元素<br>onmouseover|用户把鼠标移动到 HTML 元素上<br>onmouseout|用户把鼠标移开 HTML 元素<br>onkeydown|用户按下键盘按键<br>onload|浏览器已经完成页面加载</p>]]></content>
       
@@ -29,48 +79,23 @@
     
     
     <entry>
-      <title>JavaScript</title>
-      <link href="/2023/03/15/JavaScript/"/>
-      <url>/2023/03/15/JavaScript/</url>
+      <title>JS定义数据类型</title>
+      <link href="/2023/03/15/JS%E5%AE%9A%E4%B9%89%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+      <url>/2023/03/15/JS%E5%AE%9A%E4%B9%89%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
       
-        <content type="html"><![CDATA[<h1 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h1><figure class="highlight plaintext"><figcaption><span>document</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> 地址: https://www.w3school.com.cn/js/index.asp</span><br><span class="line"> 离线文档: W3School 离线手册(2017.03.11 版).chm</span><br><span class="line"> 基本说明</span><br><span class="line">JavaScript 能改变 HTML 内容，能改变 HTML 属性，能改变 HTML 样式 (CSS)，能完成</span><br><span class="line">页面的数据验证。</span><br></pre></td></tr></table></figure><h2 id="两种js的引入方式"><a href="#两种js的引入方式" class="headerlink" title="两种js的引入方式"></a>两种js的引入方式</h2><h3 id="方式1"><a href="#方式1" class="headerlink" title="方式1:"></a>方式1:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">&lt;title&gt;script 标签中 写 JS 代码&lt;/title&gt;</span><br><span class="line">1. 可以在 head 和 body 嵌入 script</span><br><span class="line">2. 执行顺序 从上到下</span><br><span class="line">3. 建议放在 head</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">//在 head 内使用 script 写 js</span><br><span class="line">console.log(&quot;ok&quot;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">//在 body 内使用 script 写 js</span><br><span class="line">console.log(&quot;hi&quot;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><h3 id="方式2"><a href="#方式2" class="headerlink" title="方式2:"></a>方式2:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">&lt;title&gt;使用 script 标签引入 JS 文件&lt;/title&gt;</span><br><span class="line">&lt;!-- &lt;script type=&quot;text/javascript&quot; src=&quot;引入的 js 文件&quot;&gt;&lt;/script&gt;</span><br><span class="line">--&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;test.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h1 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h1><figure class="highlight plaintext"><figcaption><span>document</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> 地址: https://www.w3school.com.cn/js/index.asp</span><br><span class="line"> 离线文档: W3School 离线手册(2017.03.11 版).chm</span><br><span class="line"> 基本说明</span><br><span class="line">JavaScript 能改变 HTML 内容，能改变 HTML 属性，能改变 HTML 样式 (CSS)，能完成</span><br><span class="line">页面的数据验证。</span><br></pre></td></tr></table></figure><h2 id="1-两种js的引入方式"><a href="#1-两种js的引入方式" class="headerlink" title="1.两种js的引入方式"></a>1.两种js的引入方式</h2><h3 id="方式1"><a href="#方式1" class="headerlink" title="方式1:"></a>方式1:</h3><ol><li>可以在 head 和 body 嵌入 script</li><li>执行顺序 从上到下</li><li>建议放在 head</li></ol><h3 id="方式2"><a href="#方式2" class="headerlink" title="方式2:"></a>方式2:</h3><p>使用 script 标签引入外部JS文件</p><h2 id="2-JavaScript变量"><a href="#2-JavaScript变量" class="headerlink" title="2.JavaScript变量"></a>2.JavaScript变量</h2><p><img src="https://pic.cartafi.org/safe/Z3J3DLflNa" alt="JavaScript 变量表示存储数据的容器"></p><h2 id="3-JavaScript-数据类型"><a href="#3-JavaScript-数据类型" class="headerlink" title="3.JavaScript 数据类型"></a>3.JavaScript 数据类型</h2><h3 id="3-1数据类型介绍"><a href="#3-1数据类型介绍" class="headerlink" title="3.1数据类型介绍"></a>3.1数据类型介绍</h3><p>数值类型： number<br>字符串类型： string<br>对象类型: object<br>布尔类型： boolean<br>函数类型： function</p><h3 id="3-2特殊值"><a href="#3-2特殊值" class="headerlink" title="3.2特殊值!!!"></a>3.2特殊值!!!</h3><p>undefined 变量未赋初始值时，默认 undefined<br>null 空值<br>NaN Not a Number 非数</p><h3 id="3-3数据类型注意"><a href="#3-3数据类型注意" class="headerlink" title="3.3数据类型注意!!"></a>3.3数据类型注意!!</h3><ol><li>String 字符串 [可以双引号括起来，也可以单引号括起来]”a book of JavaScript”、’abc’、<br>“a”、””</li><li>在 JavaScript 语言中，所有的变量，都可以做为一个 boolean 类型的变量去使<br>用。</li><li>0 、null、 undefined、””(空串) 都认为是 false</li></ol>]]></content>
       
       
       <categories>
           
-          <category> JavaScript </category>
+          <category> 笔记 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>测试</title>
-      <link href="/2023/03/11/%E6%B5%8B%E8%AF%95/"/>
-      <url>/2023/03/11/%E6%B5%8B%E8%AF%95/</url>
-      
-        <content type="html"><![CDATA[<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p><div align="center" class="aspect-ratio">    <iframe src="https://player.bilibili.com/player.html?aid=474023258&&page=1&as_wide=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" high_quality="1" danmaku="1" allowfullscreen="true">     </iframe></div><br><br></p><p><div id="aplayer-oSEOhviA" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="4895239160" data-server="netease" data-type="playlist" data-mode="random" data-autoplay="false" data-listmaxheight="340px" data-preload="auto" data-theme="#e3f2f5" data-volume="0.4" mutex="true"></div><br><div class="note simple"><p>内容</p></div></p><div class="timeline blue"><div class="timeline-item headline"><div class="timeline-item-title"><div class="item-circle"><p>时间轴样式</p></div></div></div><div class="timeline-item"><div class="timeline-item-title"><div class="item-circle"><p>2020-07-24 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases">2.6.6 -&gt; 3.0</a></p></div></div><div class="timeline-item-content"><ol><li>如果有 <code>hexo-lazyload-image</code> 插件，需要删除并重新安装最新版本，设置 <code>lazyload.isSPA: true</code>。</li><li>2.x 版本的 css 和 js 不适用于 3.x 版本，如果使用了 <code>use_cdn: true</code> 则需要删除。</li><li>2.x 版本的 fancybox 标签在 3.x 版本中被重命名为 gallery 。</li><li>2.x 版本的置顶 <code>top: true</code> 改为了 <code>pin: true</code>，并且同样适用于 <code>layout: page</code> 的页面。</li><li>如果使用了 <code>hexo-offline</code> 插件，建议卸载，3.0 版本默认开启了 pjax 服务。</li></ol></div></div><div class="timeline-item"><div class="timeline-item-title"><div class="item-circle"><p>2020-05-15 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.6">2.6.3 -&gt; 2.6.6</a></p></div></div><div class="timeline-item-content"><p>不需要额外处理。</p></div></div></div><h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p> <img src="https://cdn.jsdelivr.net/gh/bb12138ss/img@main//test/3.gif" alt="多啦a梦"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 测试 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> test </tag>
+            <tag> JS </tag>
             
         </tags>
       
@@ -121,6 +146,31 @@
         <tags>
             
             <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>测试</title>
+      <link href="/2023/03/11/%E6%B5%8B%E8%AF%95/"/>
+      <url>/2023/03/11/%E6%B5%8B%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p><div align="center" class="aspect-ratio">    <iframe src="https://player.bilibili.com/player.html?aid=474023258&&page=1&as_wide=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" high_quality="1" danmaku="1" allowfullscreen="true">     </iframe></div><br><br></p><p><div id="aplayer-oSEOhviA" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="4895239160" data-server="netease" data-type="playlist" data-mode="random" data-autoplay="false" data-listmaxheight="340px" data-preload="auto" data-theme="#e3f2f5" data-volume="0.4" mutex="true"></div><br><div class="note simple"><p>内容</p></div></p><div class="timeline blue"><div class="timeline-item headline"><div class="timeline-item-title"><div class="item-circle"><p>时间轴样式</p></div></div></div><div class="timeline-item"><div class="timeline-item-title"><div class="item-circle"><p>2020-07-24 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases">2.6.6 -&gt; 3.0</a></p></div></div><div class="timeline-item-content"><ol><li>如果有 <code>hexo-lazyload-image</code> 插件，需要删除并重新安装最新版本，设置 <code>lazyload.isSPA: true</code>。</li><li>2.x 版本的 css 和 js 不适用于 3.x 版本，如果使用了 <code>use_cdn: true</code> 则需要删除。</li><li>2.x 版本的 fancybox 标签在 3.x 版本中被重命名为 gallery 。</li><li>2.x 版本的置顶 <code>top: true</code> 改为了 <code>pin: true</code>，并且同样适用于 <code>layout: page</code> 的页面。</li><li>如果使用了 <code>hexo-offline</code> 插件，建议卸载，3.0 版本默认开启了 pjax 服务。</li></ol></div></div><div class="timeline-item"><div class="timeline-item-title"><div class="item-circle"><p>2020-05-15 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.6">2.6.3 -&gt; 2.6.6</a></p></div></div><div class="timeline-item-content"><p>不需要额外处理。</p></div></div></div><h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p> <img src="https://cdn.jsdelivr.net/gh/bb12138ss/img@main//test/3.gif" alt="多啦a梦"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> test </tag>
             
         </tags>
       
